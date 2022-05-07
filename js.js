@@ -18,6 +18,7 @@ function timer() {
     if(milliseconds < 10){
         cas.innerHTML = minutes + " : " + seconds + " : " + "0" + milliseconds
     }
+	
     else{
         cas.innerHTML = minutes + " : " + seconds + " : " + milliseconds
     }

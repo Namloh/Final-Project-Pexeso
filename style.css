@@ -370,6 +370,7 @@ use {
     width: 100%;
     height: auto;
     margin-top: 50px;
+    transform: translate(11px);
 }
 .block {
     height: 100%;
@@ -473,6 +474,7 @@ use {
  #reset:hover #reset-text{
     opacity: 1;
     transition-delay: 0.2s;
+    cursor: pointer;
  }
 
  
