@@ -36,7 +36,8 @@ use {
 }
 .revealed use {
     stroke: rgb(0, 0, 0);
-    stroke-width: 2;
+
+    stroke-width: 2; 
 }
 .board {
     max-width: 75vh;
@@ -48,6 +49,7 @@ use {
 }
 .t {
     border: 1px solid white;
+    box-shadow: 0px 0px 8px white ;
 }
 .t:hover{
     transform: scale(1.05);
@@ -57,6 +59,7 @@ use {
     transform: scale(1.05);
     background: rgb(77, 77, 77);
     border-color: white;
+    box-shadow: 0px 0px 0px white ;
 }
 .t .bt-1 {
     transform: translate(0px, 0px);
@@ -339,6 +342,7 @@ use {
     opacity: 0.5; 
 }
 
+
 #progress{
     width: 75%;
     height: 50px;
@@ -346,7 +350,7 @@ use {
     border: 2px solid red;
     margin: auto;
     margin-top: 50px;
-
+    box-shadow: 0px 0px 8px red ;
 }
 
 #bar{
@@ -369,7 +373,7 @@ use {
     font-family: "Consolas",'Courier New', Courier, monospace;
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     transform: translate(11px);
 }
 .block {
@@ -479,6 +483,9 @@ use {
 
  
 @media only screen and (max-width: 700px) {
+    body{
+        min-width: 100vw;
+    }
     #win{
         font-size: 1.7em;
     }
@@ -487,6 +494,12 @@ use {
     }
     #reset-text{
         top: -125px;
+    }
+    .tskala.revealed svg {
+        transform: translate(-4px, -8px);
+    }
+    .tveverka.revealed svg {
+        transform: translate(2px, 5px);
     }
     @keyframes win {
         0% {
